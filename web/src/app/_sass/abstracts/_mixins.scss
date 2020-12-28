@@ -1,0 +1,28 @@
+@mixin nav_buttons {
+    font-family: $primary-font;
+    color: $black-color;
+    font-weight: 400;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    margin-left: 30px;
+}
+
+@mixin nav_buttons_unused {
+    color: $lightblack-color;
+}
+
+@mixin nav_buttons_hovered {
+    opacity: 0.5;
+}
+
+@mixin title {
+    font-family: $secundary-font;
+    font-size: $title-size;
+    font-weight: 700;
+}
+
+@mixin subtitle {
+    font-family: $primary-font;
+    font-size: $subtitle-size;
+    font-weight: 400;
+}
