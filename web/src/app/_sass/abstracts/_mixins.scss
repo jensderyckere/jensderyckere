@@ -21,8 +21,108 @@
     font-weight: 700;
 }
 
+@mixin title_res {
+    font-family: $secundary-font;
+    font-size: $mob-title-size;
+    font-weight: 700;
+}
+
 @mixin subtitle {
     font-family: $primary-font;
     font-size: $subtitle-size;
     font-weight: 400;
+}
+
+@mixin subtitle_res {
+    font-family: $primary-font;
+    font-size: $mob-subtitle-size;
+    font-weight: 400;
+}
+
+@mixin text {
+    font-family: $primary-font;
+    font-size: $text-size;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 0;
+
+    strong {
+        position: relative;
+
+        span {
+            background: linear-gradient(180deg, #FF4343 0%, #FF2D2D 100%);
+            opacity: 0.6;
+            width: 80%;
+            height: 10px;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            z-index: -1;
+            animation: 1s forwards spanIn 1.5s;
+            -moz-animation: 1s forwards spanIn 1.5s;
+            -o-animation: 1s forwards spanIn 1.5s;
+            -webkit-animation: 1s forwards spanIn 1.5s;
+        }
+    }
+
+    a {
+        color: $black-color;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+@mixin text_res {
+    font-family: $primary-font;
+    font-size: $mob-text-size;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 0;
+
+    strong {
+        position: relative;
+
+        span {
+            background: linear-gradient(180deg, #FF4343 0%, #FF2D2D 100%);
+            opacity: 0.6;
+            width: 80%;
+            height: 10px;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            z-index: -1;
+            animation: 1s forwards spanIn 1.5s;
+            -moz-animation: 1s forwards spanIn 1.5s;
+            -o-animation: 1s forwards spanIn 1.5s;
+            -webkit-animation: 1s forwards spanIn 1.5s;
+        }
+    }
+
+    a {
+        color: $black-color;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+@keyframes spanIn {
+    from {width: 80%;}
+    to{width: 100%;}
+}
+
+@-moz-keyframes spanIn {
+    from {width: 80%;}
+    to{width: 100%;}
+}
+
+@-o-keyframes spanIn {
+    from {width: 80%;}
+    to{width: 100%;}
+}
+
+@-webkit-keyframes spanIn {
+    from {width: 80%;}
+    to{width: 100%;}
 }

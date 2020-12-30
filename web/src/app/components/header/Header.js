@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { animateScroll, scroller } from "react-scroll";
 
 import { useToolbox } from '../../services';
 
@@ -10,7 +11,7 @@ const Header = () => {
 
     useEffect(() => {
         window.onscroll = function() {
-            if (window.pageYOffset > 100) {
+            if (window.pageYOffset > 50) {
                 setScrolling(true);
             } else {
                 setScrolling(false);
@@ -18,15 +19,27 @@ const Header = () => {
         }
     });
 
+    const setNav = (ref) => {
+        if (ref === 'home') animateScroll.scrollToTop();
+        if (ref === 'about-me') scroller.scrollTo('about-me', {
+            duration: 1500,
+            smooth: true,
+        });
+        if (ref === 'work') scroller.scrollTo('work', {
+            duration: 1500,
+            smooth: true,
+        });
+    };
+
     return (
         <header className={`${screenSize === 'standard' ? `header ${scrolling ? 'scrolling' : ''}`: `res-header ${scrolling ? 'scrolling-phone' : ''}`}`}>
             <img src={Logo} alt="logo" />
             {
                 screenSize === 'standard' && (
                     <ul>
-                        <li>Home</li>
-                        <li>About me</li>
-                        <li>Some work</li>
+                        <li onClick={() => setNav('home')}>Home</li>
+                        <li onClick={() => setNav('about-me')}>About me</li>
+                        <li onClick={() => setNav('work')}>Some work</li>
                     </ul>
                 )
             }

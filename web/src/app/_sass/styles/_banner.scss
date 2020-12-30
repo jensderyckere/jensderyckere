@@ -15,14 +15,60 @@
     -webkit-animation: forwards 1.5s bannerIn;
     -o-animation: forwards 1.5s bannerIn;
 
+    &__res {
+        padding: 150px 20px 0px 20px;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        transition: ease-in-out 0.5s;
+        -moz-animation: forwards 1.5s bannerIn;
+        animation: forwards 1.5s bannerIn;
+        -webkit-animation: forwards 1.5s bannerIn;
+        -o-animation: forwards 1.5s bannerIn;
+
+        &--text {
+            padding: 30px 20px;
+
+            &--title {
+                @include title_res;
+                text-align: center;
+            }
+            &--subtitle {
+                @include subtitle_res;
+                text-align: center;
+                margin-top: 10px;
+            }
+            &--more {
+                font-family: $primary-font;
+                color: $red-color;
+                font-size: $mob-text-size;
+                text-align: center;
+            }
+        }
+    }
+
+    &__phone {
+        width: 100%;
+        height: 300px;       
+        background-size: cover;
+        background-position: center top;
+        opacity: 0;
+        transition: ease-in-out 0.5s;
+        -moz-animation: forwards 1.5s bannerContentIn 1s;
+        animation: forwards 1.5s bannerContentIn 1s;
+        -webkit-animation: forwards 1.5s bannerContentIn 1s;
+        -o-animation: forwards 1.5s bannerContentIn 1s;
+    }
+
     &__grey-block {
         width: 30%;
-        height: 360px;
+        height: 300px;
         background: $grey-color;
-        position: absolute;
+        position: relative;
         z-index: -1;
-        margin-top: -250px;
+        margin-top: -300px;
         opacity: 0;
+        left: 0;
         transition: ease-in-out 0.5s;
         -moz-animation: forwards 1.5s bannerIn;
         animation: forwards 1.5s bannerIn;

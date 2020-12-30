@@ -16,8 +16,10 @@ header {
     img {
         height: 60px;
         opacity: 0;
+        position: relative;
+        top: 0;
         cursor: pointer;
-        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+        transition: ease-in-out 0.2s;
         animation: forwards 1s logoIn 1s;
         -moz-animation: forwards 1s logoIn 1s;
         -webkit-animation: forwards 1s logoIn 1s;
@@ -46,12 +48,26 @@ header {
 
 header.res-header {
     justify-content: center;
+    height: 71px;
+    align-items: center;
+    position: relative;
+
+    img {
+        height: 50px;
+        position: relative;
+    }
 }
 
 header.scrolling {
     padding: 10px 50px;
     background-color: rgba($color: #FFF, $alpha: 0.9);
     border-bottom: 0.5px solid $black-color;
+}
+
+header.scrolling-phone {
+    img {
+        position: relative;
+    }
 }
 
 @keyframes headerIn {

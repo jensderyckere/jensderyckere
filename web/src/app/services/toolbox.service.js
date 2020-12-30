@@ -10,17 +10,13 @@ const ToolboxProvider = ({children}) => {
         window.addEventListener('resize', () => {
             let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;    
 
-            if (width > 726) {
+            if (width > 976) {
                 setScreenSize('standard');
             } else {
                 setScreenSize('small');
             };
         });
     });
-
-    const checkNavigation = () => {
-
-    };
 
     return (
         <ToolboxContext.Provider value={{

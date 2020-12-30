@@ -1,0 +1,366 @@
+.work {
+    padding: 0 0 100px 0;
+    transition: ease-in-out 1s;
+
+    &__text {
+        position: relative;
+        height: 100%;
+        h1 {
+            @include title;
+            opacity: 0;
+            animation: 2s worksTextIn forwards;
+            -moz-animation: 2s worksTextIn forwards;
+            -webkit-animation: 2s worksTextIn forwards;
+            -o-animation: 2s worksTextIn forwards;
+        }
+
+        h2 {
+            @include subtitle;
+            font-weight: 500;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.3s;
+            -moz-animation: 2s worksTextIn forwards 0.3s;
+            -webkit-animation: 2s worksTextIn forwards 0.3s;
+            -o-animation: 2s worksTextIn forwards 0.3s;
+        }
+
+        &--underline {
+            display: inline-block;
+            width: 0px;
+            height: 2px;
+            background-color: $black-color;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            animation: 2s lineIn forwards 0.6s;
+            -moz-animation: 2s lineIn forwards 0.6s;
+            -webkit-animation: 2s lineIn forwards 0.6s;
+            -o-animation: 2s lineIn forwards 0.6s;
+        }
+
+        h5 {
+            margin-top: 20px;
+            font-family: $primary-font;
+            font-weight: bold;
+            font-size: $text-size;
+            color: rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+        }
+
+        &--used {
+            margin: 20px 0 30px 0;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+        }
+
+        p {
+            @include text;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+        }
+
+        &--button {
+            border: 2px solid $red-color;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+
+            img {
+                transition: ease-in-out 0.5s;
+                position: relative;
+                left: 0;
+            }
+        }
+
+        &--index {
+            font-family: $primary-font;
+            font-size: 13px;
+            font-style: italic;
+            margin-left: 10px;
+        }
+
+        &--button:hover {
+            img {
+                left: 5px;
+            }
+        }
+
+        &--bottom {
+            display: flex;
+            position: absolute;
+            align-items: flex-end;
+            bottom: 0;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+        }
+    }
+
+    &__mock {
+        width: 100%;
+        height: 600px;
+        background-color: $grey-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        overflow: hidden;
+        animation: 2s worksTextIn forwards 0.3s;
+        -moz-animation: 2s worksTextIn forwards 0.3s;
+        -webkit-animation: 2s worksTextIn forwards 0.3s;
+        -o-animation: 2s worksTextIn forwards 0.3s;
+
+        img {
+            width: 80%;
+            height: 70%;
+            position: relative;
+            bottom: -800px;
+            animation: 2s mockIn forwards 0.9s;
+            -moz-animation: 2s mockIn forwards 0.9s;
+            -webkit-animation: 2s mockIn forwards 0.9s;
+            -o-animation: 2s mockIn forwards 0.9s;
+        }
+    }
+}
+
+.work-res {
+    padding: 0 0 100px 0;
+    transition: ease-in-out 1s;
+
+    &__text {
+        position: relative;
+        height: 100%;
+        h1 {
+            @include title_res;
+            opacity: 0;
+            animation: 2s worksTextIn forwards;
+            -moz-animation: 2s worksTextIn forwards;
+            -webkit-animation: 2s worksTextIn forwards;
+            -o-animation: 2s worksTextIn forwards;
+        }
+
+        h2 {
+            @include subtitle_res;
+            font-weight: 500;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.3s;
+            -moz-animation: 2s worksTextIn forwards 0.3s;
+            -webkit-animation: 2s worksTextIn forwards 0.3s;
+            -o-animation: 2s worksTextIn forwards 0.3s;
+        }
+
+        &--underline {
+            display: inline-block;
+            width: 0px;
+            height: 2px;
+            background-color: $black-color;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            animation: 2s lineIn forwards 0.6s;
+            -moz-animation: 2s lineIn forwards 0.6s;
+            -webkit-animation: 2s lineIn forwards 0.6s;
+            -o-animation: 2s lineIn forwards 0.6s;
+        }
+
+        h5 {
+            margin-top: 20px;
+            font-family: $primary-font;
+            font-weight: bold;
+            font-size: $text-size;
+            color: rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+        }
+
+        &--used {
+            margin: 20px 0 30px 0;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+        }
+
+        p {
+            @include text_res;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+        }
+
+        &--button {
+            border: 2px solid $red-color;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+
+            img {
+                transition: ease-in-out 0.5s;
+                position: relative;
+                left: 0;
+            }
+        }
+
+        &--index {
+            font-family: $primary-font;
+            font-size: 13px;
+            font-style: italic;
+            margin-left: 10px;
+        }
+
+        &--roles {
+            margin-bottom: 80px !important;
+        }
+
+        &--button:hover {
+            img {
+                left: 5px;
+            }
+        }
+
+        &--bottom {
+            display: flex;
+            position: absolute;
+            align-items: flex-end;
+            bottom: 0;
+            opacity: 0;
+            animation: 2s worksTextIn forwards 0.9s;
+            -moz-animation: 2s worksTextIn forwards 0.9s;
+            -webkit-animation: 2s worksTextIn forwards 0.9s;
+            -o-animation: 2s worksTextIn forwards 0.9s;
+        }
+    }
+
+    &__mock {
+        margin-top: 30px;
+        width: 100%;
+        height: 600px;
+        background-color: $grey-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        overflow: hidden;
+        animation: 2s worksTextIn forwards 0.3s;
+        -moz-animation: 2s worksTextIn forwards 0.3s;
+        -webkit-animation: 2s worksTextIn forwards 0.3s;
+        -o-animation: 2s worksTextIn forwards 0.3s;
+
+        img {
+            width: 80%;
+            height: 70%;
+            position: relative;
+            bottom: -800px;
+            animation: 2s mockIn forwards 0.9s;
+            -moz-animation: 2s mockIn forwards 0.9s;
+            -webkit-animation: 2s mockIn forwards 0.9s;
+            -o-animation: 2s mockIn forwards 0.9s;
+        }
+    }
+}
+
+.work.away {
+    opacity: 0;
+}
+
+@keyframes worksTextIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes worksTextIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes worksTextIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes worksTextIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes lineIn {
+    from {width: 0;}
+    to {width: 110px;}
+}
+
+@-moz-keyframes lineIn {
+    from {width: 0;}
+    to {width: 110px;}
+}
+
+@-o-keyframes lineIn {
+    from {width: 0;}
+    to {width: 110px;}
+}
+
+@-webkit-keyframes lineIn {
+    from {width: 0;}
+    to {width: 110px;}
+}
+
+@keyframes mockIn {
+    from {bottom: -800px;}
+    to {bottom: 0;}
+}
+
+@-moz-keyframes mockIn {
+    from {bottom: -800px;}
+    to {bottom: 0;}
+}
+
+@-o-keyframes mockIn {
+    from {bottom: -800px;}
+    to {bottom: 0;}
+}
+
+@-webkit-keyframes mockIn {
+    from {bottom: -800px;}
+    to {bottom: 0;}
+}

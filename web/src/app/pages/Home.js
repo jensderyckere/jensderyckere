@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Banner } from '../components';
+import { About, Banner, Contact, Skills, Works } from '../components';
 import { useToolbox } from '../services';
 
 const Home = () => {
@@ -9,6 +9,18 @@ const Home = () => {
     return (
         <main>
             <Banner 
+                screenSize={screenSize}
+            />
+            <About 
+                screenSize={screenSize}
+            />
+            <Skills 
+                screenSize={screenSize}
+            />
+            <Works 
+                screenSize={screenSize}
+            />
+            <Contact 
                 screenSize={screenSize}
             />
         </main>
